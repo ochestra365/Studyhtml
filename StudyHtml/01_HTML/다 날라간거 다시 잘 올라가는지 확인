@@ -1,8 +1,8 @@
-리드미를 적다가 레포지터리의 경로설정을 잘 못해서
-아예 전부 레포지터리가 날라가 버렸다.
-그래서 방법을 찾았다.
-1. 레포지터리를 새로 만든다.
-2. 레포지터리를 내 로컬에 클로닝한다.
-3. 내 로컬의 프로그래밍 파일을 복사해서 클로닝한 폴더에 삽입한다.
-4. 경로가 변동되었기 때문에 스테이징을 하고, 새로 커밋하고, 풀 푸쉬 동기화를 시작한다.
-교안내용대로 한 것들
+I was writing down the Readme, but I couldn't set the path to the repository.
+All the repositories were blown away.
+So I found a way.
+1. Create a new repository.
+2. Cloning the repository locally.
+3. Copy my local programming file and insert it into the cloned folder.
+4. Staging, committing anew, and starting full push synchronization because the path has changed.
+I've done what I've learned.
