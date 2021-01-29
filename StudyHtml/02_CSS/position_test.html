@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS3 position Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        /* ms-page는 마이크로소프트의 인터넷 표준을 위한 것이다. 마이크로소프트는 인터넷 표준을 따르지 못하고 있다. */
+        /* absolute는 절댓값, relative는 상댓값이다. */
+        /* .box:nth-child(1) {
+            background-color: rgba(255, 0, 0,0.5);
+        }
+
+        .box:nth-child(2) {
+            background-color: rgba(0, 255, 0,0.5);
+        }
+
+        .box:nth-child(3) {
+            background-color: rgba(0, 0, 255,0.5);
+         */
+
+            .box:nth-child(1) {
+            background-color: rgb(255, 0, 0);
+            left: 10px;
+            top: 10px;
+            z-index: 100;
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(0, 255, 0);
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+        }
+
+        .box:nth-child(3) {
+            background-color: rgb(0, 0, 255);
+            left: 90px;
+            top: 90px;
+            z-index: 1;}
+            h1{
+                position: absolute;
+                left: 200;
+                top: 20px;
+            }
+    </style>
+    <!-- /* z-index가 값이 높을 수록 상단에 위치하게 되는 것이다. z축이다.3차원의 height를 담당하는 것. 숫자가 클수록 우선순위가 앞쪽으로 보이게 된다. */ -->
+    <!-- 모든 태그에 위치값을 저장할 수가 있다. -->
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>
+<!-- /* 항상 HTML구동시 ctrl+space를 눌러서 기본 프레임을 활성화 시킨다. */
+/* ctrl+f5눌러서 해당 웹 브라우저를 클릭하여 사용하면 된다. */ -->
+<!-- 맨 마지막 코드라인에 빨간줄이 뜬다면 코드블락을 제대로 안한 구문이 존재한다는 것이다. -->

@@ -14,8 +14,8 @@
             background-attachment: fixed;
             background-position: 0px 50%;
             background-color: azure;
+            font-family: 'NanumGothic';
 
-            
             /*  background-repeat: no-repeat; 하나만 나오게 한다.*/
             /* 이럴 때 %를 쓰는 것이다. 우리가 쓰는 이미지가 화면에 딱 나오게 하려면 %가 가장 잘 나타낸다. */
             /* png확장자를 이용하여 그림이 중첩되게 표현하여 디자인 기술력을 높인 것이다. */
@@ -23,18 +23,25 @@
             /*  background-attachment: fixed; 배경이 픽스하게 된다.*/
             /* 원리를 알면 삶이 편해진다. */
         }
+        a:hover{
+            text-decoration: darkgreen none;
+        }
+        /* a링크의 속성을 더 해준다. 즉 none을 밑줄을 없애줘서 디자인의 퀄을 높인다. 그리고 hover를 써서 이걸 커서가지고 갈때 밑줄이 발생하게 됨. */
     </style>
 </head>
 
 <body>
     <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ut quibusdam, fugit necessitatibus totam ducimus!
         Praesentium omnis eligendi culpa ea tempore. In saepe suscipit ut, delectus dolor quae porro natus.</h1>
+        <p>LOREM</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident omnis corrupti blanditiis quam sapiente,
         vel culpa magni totam tenetur recusandae, obcaecati molestias modi maxime deleniti commodi vero voluptatibus
         odit.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident omnis corrupti blanditiis quam sapiente,
         vel culpa magni totam tenetur recusandae, obcaecati molestias modi maxime deleniti commodi vero voluptatibus
         odit.</p>
+        <p><a href="https://www.naver.com target"_blank>naver</a></p>
+        <!-- 링크걸고 -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio provident omnis corrupti blanditiis quam sapiente,
         vel culpa magni totam tenetur recusandae, obcaecati molestias modi maxime deleniti commodi vero voluptatibus
         odit.</p>
@@ -68,3 +75,4 @@
 <!-- 주석은 많이 쓸수록 좋다. 이것을 많이 쓰면 유지보수에 큰 도움이 된다. -->
 <!-- 크롬에서 화면 검사를 통해 바뀌는 것을 직접 확인하는 것이 시각적으로 확인하기 편해서 좋다. -->
 <!-- 수평스크롤은 절대 없다. 수직 스크롤만 존재한다. 수평 스크롤은 사용자 입장에서 너무 불편하다. 필수불가결적으로 필요할 때만 넣는다. 수평스크롤을 최소화하는 것이 개발자로서의 상도이다. -->
+<!-- 기본적으로 문서가 가진 정렬 기능을 다 설정할 수 있다. Text-align -->
