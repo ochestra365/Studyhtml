@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Selector_child_test</title>
+    <style>
+        #header>h2 {
+            color: red
+        }
+
+        /* The method of adjusting style stimultaneously */
+        /* #header h2, h3=  #header h2, #headerh3 */
+        #section h2 {
+            color: orange
+        }
+
+        h2:hover {
+            background-color: black;
+        }
+
+        h2:active {
+            background-color: blue;
+        }
+
+        /* hover is the code that active the situation whenever you hover the Mouse cursor to each class */
+        /* Internal Stylesheet */
+        /* activ is the code source that active the situation whenever you click the each class */
+
+        input :enabled {
+            background-color: greenyellow;
+        }
+        input :disabled {
+            background-color: green;
+        }
+        /* 인풋 상황에서 가능한 경우와 안 가능한 경우에 상황 변화 색상 스타일을 적용시키겠다. 상태 선택자*/
+        /* 인풋 태그에서 포커스에 들어가면 어떻게 변화하는 가? */
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h2 class="title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam odio autem cumque ad
+            quasi voluptates eum asperiores consectetur corporis. Nihil accusantium ducimus nulla nesciunt autem
+            reprehenderit maiores sapiente quae.</h2>
+        <div id="nav">
+            <h2>Navigation</h2>
+        </div>
+        <h3>subTitle</h3>
+    </div>
+    <div id="section">
+        <h2 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab earum temporibus dolore
+            autem, facilis quaerat qui deserunt cupiditate ipsa repellat nostrum animi ad tempore officiis tenetur at
+            quam blanditiis.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quibusdam autem iste velit voluptate officiis
+            corporis, error magni odit consectetur at est quae et adipisci excepturi assumenda necessitatibus ipsa
+            quaerat.</p>
+    </div>
+    <div>
+        <form>
+            <label for="user_id">이름</label>
+            <input name="user_id" type="text" value="ochestra365"><br>
+            <label for="user_id">비밀번호</label>
+            <input name="user_id" type="password" value="12345" disabled><br>
+            <!-- "disabled" is the source code disabling the activation-->
+        </form>
+    </div>
+</body>
+
+</html>
+<!-- Ctrl+Space is the Key combo to set up HTML square -->
+<!--Aligning source is important always time. so you should typing "shift+alt+f" key combo -->
+<!-- Reference key combo is ctrl+k+u -->
