@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>One true layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            margin: 0 auto;
+            width: 800px;
+        }
+        /* 중앙정렬 그리고 아스트릭은 all을 의미함. 전체 크기 설정*/
+
+        #header{
+            overflow: hidden;
+            background-color: red;
+            /* 안의 내용이 넘어서면 어떻게 하겠다. */
+        }
+        
+        #section{
+            overflow: hidden;
+        }
+
+        #aside{
+            float: left;
+            width: 200px;
+            background-color: blueviolet;
+        }
+
+        #content{
+            float: left;
+            width: 600px;
+            background-color: chocolate;
+        }
+
+        #footer{
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et excepturi praesentium ut
+        deserunt veniam corrupti magnam nobis inventore at aliquam enim dolorem est dolores, repudiandae, eos in
+        distinctio dolorum!</div>
+    <div id="section">
+        <div id="aside">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci cupiditate sapiente
+            dicta exercitationem. Quos enim dicta numquam magnam fugiat, cupiditate soluta nam voluptatem ipsa quisquam
+            corporis voluptate, veniam et?</div>
+        <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum nesciunt, similique
+            deleniti doloremque quisquam distinctio molestias quod facere doloribus repellat perspiciatis esse, nostrum
+            iusto! Corporis eius quis deleniti repellendus?</div>
+    </div>
+    <div id="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vel reiciendis quam commodi beatae error!
+        Rerum, vitae iste, aut consectetur aliquid, illo veniam distinctio tempora quos quod ipsum necessitatibus nemo!
+    </div>
+</body>
+
+</html>
+<!-- 웹페이지의 구조화를 고정하는 작업이다. -->
