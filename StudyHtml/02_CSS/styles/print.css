@@ -1,0 +1,4 @@
+@media print {
+    body{ background-color: green;}
+ }
+ /* 프린트할 때 나오게 하는 것, 그리고 디바이스 별로 다른 값이 출력되도록 할 수 있다. */

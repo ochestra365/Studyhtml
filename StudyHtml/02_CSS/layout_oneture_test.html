@@ -43,18 +43,26 @@
         #footer{
             background-color: cyan;
         }
+
+        .ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+        /* 엘립시스 객체를 설정해주는 것이다. 그리고 이것들이 디브안에서 내부스타일로써 작동하는 것이다.
+        글을 다 있는 것이나 글 내용이 넘어가는 것은 생략되어 표현되는 것이다. 삶이 편해지는 것!!!!! */
     </style>
 </head>
 
 <body>
-    <div id="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et excepturi praesentium ut
+    <div id="header" class="ellipsis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore et excepturi praesentium ut
         deserunt veniam corrupti magnam nobis inventore at aliquam enim dolorem est dolores, repudiandae, eos in
         distinctio dolorum!</div>
     <div id="section">
-        <div id="aside">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci cupiditate sapiente
+        <div id="aside" class="ellipsis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci cupiditate sapiente
             dicta exercitationem. Quos enim dicta numquam magnam fugiat, cupiditate soluta nam voluptatem ipsa quisquam
             corporis voluptate, veniam et?</div>
-        <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum nesciunt, similique
+        <div id="content" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laborum nesciunt, similique
             deleniti doloremque quisquam distinctio molestias quod facere doloribus repellat perspiciatis esse, nostrum
             iusto! Corporis eius quis deleniti repellendus?</div>
     </div>
