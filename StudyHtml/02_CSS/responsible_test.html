@@ -2,22 +2,37 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1' user-scalable=no>
+    <title>Responsive Web Basic</title>
     <style>
-        /* 스타일즈와연동되게 하는 것을 잘 모르겠다. */
+        @media (max-width: 499px) {
+            body {
+                background: red;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 799px) {
+            body {
+                background: green;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background: blue;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis, omnis, incidunt itaque asperiores earum,
-        accusamus molestias eos doloremque impedit harum ipsam quia tempore non. Quasi quo voluptates pariatur
-        quibusdam.</h1>
-    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis at a accusamus cumque cum, vero impedit natus
-        obcaecati assumenda. Optio repellat harum neque dignissimos vel corrupti voluptate voluptates dicta ad.</p1>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus hendrerit nunc at consectetur. In hac
+        habitasse platea dictumst. Ut a luctus neque, et tempor erat. Aliquam quis arcu id lectus fringilla volutpat id
+        tempor lorem. Duis vitae odio vehicula dui vulputate mollis et sit amet mauris. Nulla facilisi. Praesent non
+        sapien ac sapien malesuada ornare eget at libero. Aenean et faucibus arcu, id maximus mi. Curabitur tincidunt mi
+        vitae orci porttitor, quis laoreet justo iaculis.</p>
 </body>
 
 </html>
-<!-- 해상도에 따라 다르게 나오게 하고 싶다면 미디어 쿼리를 써줘야 하는 것이다. -->
+
+<!-- 지금 웹의 트렌드이다. 규모가 크면 바꾸기가 어렵다. 반응형 웹은 @media 정도하고 Responsive웹이 뭔지만 알지 알면됨. 디바이스가 뭔지간에 사이즈에 따라서 자동적으로 그 내용을 적용시켜주는 것. -->
