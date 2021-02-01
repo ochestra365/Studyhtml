@@ -17,27 +17,74 @@
         //조건문은 컴퓨터에서 가장 중요한 것이다. 문장 실행과 빠져나감을 잘 기억해야 한다.
 
         //조건문
-        var leftVal=35;
-        var rightVal=108
+        var leftVal = 35;
+        var rightVal = 108
 
         if (leftVal > rightVal) {
             console.log("조건이 참인 문장을 실행합니다.");
-        } else{
+        } else {
             console.log("조건이 거짓일 경우 이문장이 실행됩니다.");
         }
         console.log("모든일을 완료합니다.")
         //알람을 띄우는 것을 개발자는 별로 안 좋아한다.
 
         //날짜
-        var date= new Date();
+        var date = new Date();
         //요소추출
-        var year= date.getFullYear();
-        var month=date.getMonth()+1;//month는 무조건 +1을 해줘야 한다. 나머지는 상관 없다.
-        var day=date.getDay();
-        var hour=date.getHours();
-        var min=date.getMinutes();
-        var second=date.getSeconds();
-        console.log(year+"-"+month+"-"+day+"-"+hour+"-"+min+"-"+second);
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;//month는 무조건 +1을 해줘야 한다. 나머지는 상관 없다.
+        var day = date.getDay();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var second = date.getSeconds();
+        console.log(year + "-" + month + "-" + day + "-" + hour + "-" + min + "-" + second);
+
+        if (hour < 12) {
+            console.log("현재 오전입니다.");
+        }
+        else {
+            console.log("현재 오후입니다.");
+        }
+        //if문을 두번 쓸 필요가 없다. 내용이 같아지면 로직이 달라지는 것이다. 분기가 있다.
+        //if문 안에 이중 삼중으로 if문을 쓸 수가 있다. 의미만 알고 있으면 된다.
+
+        if (hour < 5) {
+            console.log("잠을 자렴");
+        } else if (hour < 7) {
+            console.log("기상!");
+        } else if (hour > 9) {
+            console.log("출근");
+        } else {
+            console.log("운동!!");
+        }
+    //하나의 루트를 타는 순간 바로 빠져나간다. 전부 다 타는 것이 아니라 조건을 만족하는 첫번째만 타는 것이다.
+
+    //배열 array
+    var array = [1,2,3,4,5,6,7,8,9,10];
+    console.log(array);
+    
+    // 배열 요소 접근
+    console.log(array[0]);//1
+    console.log(array[4]);//5
+    console.log(array[10]);//error->undefined라고 출력된다. 정의할 수 없다고 나온다.
+
+    // 반복문 while
+    var i=0;
+    console.log("반복문 while처리")
+    while (i<array.length) {
+        console.log("배열"+i+"번쨰 값은"+array[i]);
+        i++;
+        //i=i+1;, i+=1, i++을 꼭 눌러줘야 뻑이 안 난다. 프론트에서는 항상 이 무한루프를 조심해야 한다.
+    }
+
+    //반복문 for
+//    console.log("반복문 while 처리")
+//     for (let index = 0; index < array.length; index++) {
+//         const element = array[index];
+//         console.log(arrary[index]);
+//     }
+    //logic 구문은 자동완성 구조가 있다. for문은 뻑이 난다. 왜 일까?
+    
     </script>
 </head>
 
@@ -46,3 +93,4 @@
 </body>
 
 </html>
+<!-- 컨트롤쉬프트I로 브라우저에서 확인가능 -->
