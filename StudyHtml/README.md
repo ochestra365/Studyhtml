@@ -21,7 +21,8 @@ CSS 기본 학습
 -----------
 
 ## Javascript
-Javascript 기본 학습
+Javascript 기본 학습<br>
+[JS소스](https://github.com/ochestra365/Studyhtml/tree/main/StudyHtml/03_JAVASCRIPT)
 ------------
 
 ## Responsive Web
@@ -29,8 +30,10 @@ Javascript 기본 학습
 -----------
 
 ## Project
-전체 통합 프로젝트
+전체 통합 프로젝트<br>
+[전체소스](https://github.com/ochestra365/Studyhtml/blob/main/StudyHtml/04_project/index.html)
 #### 반응형 웹 그리드 레이아웃 웹페이지 실습
 ![결과1](https://raw.githubusercontent.com/ochestra365/Studyhtml/86ab556b7c90274502491d48bf4930c553842568/StudyHtml/04_project/ref_images/result_01.png "전체 레이아웃")
+
 
 
