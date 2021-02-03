@@ -293,7 +293,14 @@
                     isAnimated: true
                 });
             });
-            $(".paper").click(function(){showLightBox;});
+            $(".paper").click(function(){showLightBox();});
+            $("darken-background").click(function(){
+                hideLightBox();
+                //라이트박스 서포트
+                $("#lightbox").click(function(event){
+                    event.stopPropagation();
+                });
+            });
         });
         //라이트박스
         function showLightBox(){
@@ -301,7 +308,13 @@
             $("darken-background").css('top',$(window).scrollTop());
             //스크롤 못하게 합니다.
             $('body').css('overflow','hidden');
-        }
+        };
+
+        function hideLightBox(){
+            $("darken-background").hide();
+            $('body').css('overflow','');
+        };
+        //라이트박스 제거 이벤트
     </script>
 </head>
 
