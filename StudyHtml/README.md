@@ -34,6 +34,7 @@ Javascript 기본 학습<br>
 [전체소스](https://github.com/ochestra365/Studyhtml/blob/main/StudyHtml/04_project/index.html)
 #### 반응형 웹 그리드 레이아웃 웹페이지 실습
 ![결과1](https://raw.githubusercontent.com/ochestra365/Studyhtml/86ab556b7c90274502491d48bf4930c553842568/StudyHtml/04_project/ref_images/result_01.png "전체 레이아웃")<br>
+----------------------------------------------
 ![결과2](https://github.com/ochestra365/Studyhtml/blob/main/StudyHtml/04_project/ref_images/img_20210203_164040_001.png?raw=true)
 
 
