@@ -205,54 +205,106 @@
                 width: 690px;
             }
         }
+
         @media (min-width: 930px)and(max-width: 1149px) {
             #main-section {
                 width: 920px;
             }
-        }  
+        }
+
         @media (min-width: 1150px)and(max-width: 1379) {
             #main-section {
                 width: 1150px;
             }
-        }  
+        }
+
         @media (min-width: 1380px) {
             #main-section {
                 width: 1380px;
             }
         }
-       
     </style>
     <!-- 라이트박스 -->
     <style>
-        #darken-background{
+        #darken-background {
             position: absolute;
-            top:0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 100%;
 
             display: none;
-            background: rgba(0,0,0,0.9);
+            background: rgba(0, 0, 0, 0.9);
             z-index: 10000;
             overflow: scroll;
         }
-        #lightbox{
+
+        #lightbox {
             width: 700px;
-            margin: 20px auto; padding: 15px;
+            margin: 20px auto;
+            padding: 15px;
 
             border: 1px solid #333333;
             border-radius: 5px;
             background: white;
-            box-shadow: 0 5px 5px rgba(34,25,25,0.4);
+            box-shadow: 0 5px 5px rgba(34, 25, 25, 0.4);
             text-align: center;
         }
-        .user-information{overflow: hidden; text-align: left;}
-        .user-information-image{float: left; width:70px;}
-        .user-information-text{float: right; width: 620px;}
-        .lightbox-splitter{margin: 10px 0;}
+
+        .user-information {
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .user-information-image {
+            float: left;
+            width: 70px;
+        }
+
+        .user-information-text {
+            float: right;
+            width: 620px;
+        }
+
+        .lightbox-splitter {
+            margin: 10px 0;
+        }
     </style>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        //로드이벤트
+        $(document).ready(function () {
+            //풀다운 메뉴적용
+            $(".outer-menu").hover(function () {
+                $(this).find('.inner-menu').css('display', 'block');
+            }, function () {
+                $(this).find('.inner-menu').css('display', 'block')
+            });
+        });
+
+        //그리드 레이아웃 적용
+        $("#main-section").imagesLoaded(function () {
+            $(document).ready(function () {
+                $("#main-section").masonry(); ({
+                    itemSelector: ".paper",
+                    columnWidth: 230,
+                    isAnimated: true
+                });
+            });
+            $(".paper").click(function(){showLightBox;});
+        });
+        //라이트박스
+        function showLightBox(){
+            $("darken-background").show();
+            $("darken-background").css('top',$(window).scrollTop());
+            //스크롤 못하게 합니다.
+            $('body').css('overflow','hidden');
+        }
+    </script>
 </head>
+
 <body>
     <header id="main-header">
         <div class="header-search-form">
